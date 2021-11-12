@@ -1,5 +1,5 @@
 html {
-  background-color: seagreen;
+  background-color: #black;
 }
 
 ul {
@@ -7,28 +7,52 @@ ul {
 }
 
 button {
-  background-color: #cb5c54;
+  background: url('./images/black-bg.jpeg') no-repeat;
+  color: darkgray;
+  -webkit-box-shadow: inset 10px 10px 15px 0px #3a455d;
+  -moz-box-shadow: inset 10px 10px 15px 0px #3a455d;
+  box-shadow: inset 10px 10px 15px 0px #3a455d;
   outline: none;
-  border-radius: 5px;
+  border-radius: 10px;
+  border: solid #3a455d 3px;
   height: 100px;
   width: 300px;
   font-family: monaco;
-  font-size: 16px;
-  margin: 0;
+  font-size: 18px;
+  margin: 1%;
 }
 
 button:hover {
-  color: black;
+  background: url('./images/black-bg.jpeg') no-repeat;
+  color: darkgray;
   transform:scale(1.1);
-  border: solid lavender 2px;
+  border: solid gray 2px;
+  cursor: pointer;
 }
 
 li {
   font-family: monaco;
-  font-size: 14px;
+  font-size: 18px;
+  color: gray;
 
+}
+
+.bg-image {
+  position: fixed;
+  z-index: -999;
+  top: 0;
+  left: 0;
+  background: url('./images/red-bg.jpeg') no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  z-index: -999;
 }
 
 .users {
   color: black;
+  list-style: none;
+  display: table;
+  flex-direction: row;
+  text-align: center;
 }
