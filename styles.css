@@ -1,3 +1,34 @@
 html {
-  background-color: pink;
+  background-color: seagreen;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button {
+  background-color: #cb5c54;
+  outline: none;
+  border-radius: 5px;
+  height: 100px;
+  width: 300px;
+  font-family: monaco;
+  font-size: 16px;
+  margin: 0;
+}
+
+button:hover {
+  color: black;
+  transform:scale(1.1);
+  border: solid lavender 2px;
+}
+
+li {
+  font-family: monaco;
+  font-size: 14px;
+
+}
+
+.users {
+  color: black;
 }
