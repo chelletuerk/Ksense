@@ -59,13 +59,15 @@ const handleClick = () => {
 
         if(e.userId == targetId) {
           $('.users').append(`
-            <ul>
-              <li
-                id=${e.userId}
-                class="post">
-                </br>${e.body.charAt(0).toUpperCase() + e.body.slice(1)}.</br>
-              </li>
-            </ul>`)
+            <div class="post-container">
+              <ul>
+                <li
+                  id=${e.userId}
+                  class="post">
+                  </br>${e.body.charAt(0).toUpperCase() + e.body.slice(1)}.</br>
+                </li>
+              </ul>
+            </div>`)
         }
       })
     })
