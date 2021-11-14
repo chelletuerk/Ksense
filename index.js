@@ -49,7 +49,7 @@ const handleClick = () => {
 
     $('.users').on('click',(e) => {
       $('.post').remove()
-      const targetId = e.target.id
+      let targetId = e.target.id
 
 
 ////////////////////////////   !!!IMPORTANT!!!   ///////////////////?///////////
@@ -101,8 +101,8 @@ const handleClick = () => {
           //conditional due to both elements being integers and the same data
           //structure, but for some reeason it will only function properly wirth
           //a shallow, double equals.
-
-          if(e.userId == targetId) {
+          targetId = + targetId
+          if(e.userId === targetId) {
             $('.users').append(`
               <div class="post-container">
                 <ul>
