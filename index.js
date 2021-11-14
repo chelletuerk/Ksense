@@ -101,7 +101,7 @@ const handleClick = () => {
           //conditional due to both elements being integers and the same data
           //structure, but for some reeason it will only function properly wirth
           //a shallow, double equals.
-          targetId = + targetId
+          targetId = +targetId
           if(e.userId === targetId) {
             $('.users').append(`
               <div class="post-container">
