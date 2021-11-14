@@ -48,7 +48,7 @@ const handleClick = () => {
   .then(json => (json.forEach((e) => {
 
     $('.users').on('click',(e) => {
-      $('.post').remove()
+      $('.post-container').remove()
       let targetId = e.target.id
 
 
@@ -96,11 +96,6 @@ const handleClick = () => {
 
       //window.setTimeout(() => {
         json.map((e) => {
-
-          //I thought I'd be able to use a triple/deep equal in this 'if'
-          //conditional due to both elements being integers and the same data
-          //structure, but for some reeason it will only function properly wirth
-          //a shallow, double equals.
           targetId = +targetId
           if(e.userId === targetId) {
             $('.users').append(`
