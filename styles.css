@@ -17,7 +17,7 @@ button {
   border: solid #3a455d 3px;
   height: 100px;
   width: 300px;
-  font-family: 'Poiret One', cursive;
+  font-family: 'Poiret One', monaco;
   font-size: 28px;
   margin: 1%;
 }
@@ -31,7 +31,7 @@ button:hover {
 }
 
 li {
-  font-family: 'Poiret One', cursive;
+  font-family: 'Poiret One', monaco;
   font-size: 28px;
   color: gray;
   text-align: center;

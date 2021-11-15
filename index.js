@@ -42,14 +42,22 @@ const renderUsers = (json) => {
 //DOM. Lastly, I used the .remove() method to clear the DOM every time a new user
 //was clicked, requiring a new API call.
 
+const clearDOM = () => {
+  $('button').on('click', () => {
+    $('.posts').remove()
+  })
+}
+
 const handleClick = () => {
   fetch('https://jsonplaceholder.typicode.com/posts/')
   .then(response => response.json())
   .then(json => (json.forEach((post) => {
     $('.user').on('click',(e) => {
       //$('.post').remove()
+      // clearDOM()
       let targetId = +e.target.id
       if(post.userId === targetId) {
+        $('.post').remove()
         $('.posts').append(`
           <div class="post-container">
             <ul>
